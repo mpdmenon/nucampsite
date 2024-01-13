@@ -75,7 +75,18 @@ const CommentForm = ({ campsiteId }) => {
                   className="text-danger"
                 />
               </FormGroup>
-              {/* ... rest of the form ... */}
+              <FormGroup>
+                <Label htmlFor="commentText">Comment</Label>
+                <Field
+                  name="commentText"
+                  as="textarea"
+                  rows="12"
+                  className="form-control"
+                />
+              </FormGroup>
+              <Button type="submit" color="primary">
+                Submit
+              </Button>
             </Form>
           </Formik>
         </ModalBody>
